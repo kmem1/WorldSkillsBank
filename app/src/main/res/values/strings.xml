@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">WorldSkillsBank</string>
     <string name="logo_text">WorldSkills Bank</string>
+    <string name="atms_button_label">Отделения и банкоматы</string>
+    <string name="rates">Курсы валют</string>
+    <string name="usd">USD</string>
+    <string name="eur">EUR</string>
+    <string name="log_in">Войти</string>
 </resources>
