@@ -4,9 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Kmem/AndroidStudioProjects/WorldSkillsBank/app/src/main/res/drawable/sign_in_button_bg.xml" value="0.3769230769230769" />
+        <entry key="..\:/Users/Kmem/AndroidStudioProjects/WorldSkillsBank/app/src/main/res/drawable/sign_in_button_bg_ripple.xml" value="0.3769230769230769" />
         <entry key="..\:/Users/Kmem/AndroidStudioProjects/WorldSkillsBank/app/src/main/res/drawable/sign_in_fragment_background.xml" value="0.32407407407407407" />
         <entry key="..\:/Users/Kmem/AndroidStudioProjects/WorldSkillsBank/app/src/main/res/drawable/sign_in_fragment_bg.xml" value="0.3769230769230769" />
         <entry key="..\:/Users/Kmem/AndroidStudioProjects/WorldSkillsBank/app/src/main/res/drawable/sign_in_fragment_button_bg.xml" value="0.32407407407407407" />
+        <entry key="..\:/Users/Kmem/AndroidStudioProjects/WorldSkillsBank/app/src/main/res/drawable/sign_in_fragment_button_bg_ripple.xml" value="0.3769230769230769" />
         <entry key="..\:/Users/Kmem/AndroidStudioProjects/WorldSkillsBank/app/src/main/res/layout/activity_main.xml" value="0.2957427536231884" />
         <entry key="..\:/Users/Kmem/AndroidStudioProjects/WorldSkillsBank/app/src/main/res/layout/fragment_sign_in.xml" value="0.33" />
       </map>
