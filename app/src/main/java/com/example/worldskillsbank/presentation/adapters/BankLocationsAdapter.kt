@@ -3,6 +3,7 @@ package com.example.worldskillsbank.presentation.adapters
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.example.worldskillsbank.R
 import com.example.worldskillsbank.databinding.BankLocationItemBinding
@@ -47,10 +48,10 @@ class BankLocationsAdapter(
 
             if (currentTimeInMinutes in item.openTimeInMinutes..item.closeTimeInMinutes) {
                 binding.isWorkingView.text = context.getString(R.string.open)
-                binding.isWorkingView.setTextColor(context.resources.getColor(R.color.green, null))
+                binding.isWorkingView.setTextColor(ContextCompat.getColor(context, R.color.green))
             } else {
                 binding.isWorkingView.text = context.getString(R.string.closed)
-                binding.isWorkingView.setTextColor(context.resources.getColor(R.color.red, null))
+                binding.isWorkingView.setTextColor(ContextCompat.getColor(context, R.color.red))
             }
 
             val openTimeString = Pair(openTimeHour, openTimeMinute).toTimeFormat()
