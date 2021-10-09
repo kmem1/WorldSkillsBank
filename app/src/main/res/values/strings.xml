@@ -6,4 +6,9 @@
     <string name="usd">USD</string>
     <string name="eur">EUR</string>
     <string name="log_in">Войти</string>
+    <string name="departments_and_atms">Отделения и банкоматы</string>
+    <string name="work_hours">Часы работы</string>
+    <string name="open">Работает</string>
+    <string name="closed">Закрыто</string>
+    <string name="workTimeFormat">%1$s-%2$s</string>
 </resources>

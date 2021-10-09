@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/addressView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="11sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="16dp"
+        android:text="Москва, ул. Вавилова, д.7" />
+
+    <TextView
+        android:id="@+id/typeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addressView"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignStart="@+id/addressView"
+        android:text="Банкомат"
+        android:textColor="@color/black"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/isWorkingView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/typeView"
+        android:layout_toEndOf="@+id/typeView"
+        android:layout_marginStart="14dp"
+        android:text="Работает"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/green"
+        android:textSize="11sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/workHoursView"
+        android:layout_alignTop="@+id/typeView"
+        android:textSize="11sp"
+        android:text="@string/work_hours"
+        android:textColor="@color/black"
+        android:layout_marginEnd="4dp"/>
+
+    <TextView
+        android:id="@+id/workHoursView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/typeView"
+        android:textSize="11sp"
+        android:textColor="@color/black"
+        android:layout_marginEnd="6dp"
+        android:text="09:00-20:00" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/typeView"
+        android:background="#80CBC4" />
+
+</RelativeLayout>
