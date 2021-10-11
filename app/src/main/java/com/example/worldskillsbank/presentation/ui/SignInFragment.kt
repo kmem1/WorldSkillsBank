@@ -6,6 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
+import com.example.worldskillsbank.R
 import com.example.worldskillsbank.databinding.FragmentSignInBinding
 import com.example.worldskillsbank.presentation.viewmodels.SignInViewModel
 import dagger.hilt.android.AndroidEntryPoint
@@ -27,7 +29,7 @@ class SignInFragment : Fragment() {
 
         binding.viewModel = viewModel
 
-        binding.atmsButton.setOnClickListener { }
+        binding.atmsButton.setOnClickListener(atmsButtonOnClickListener)
 
         binding.ratesButton.setOnClickListener { }
 
@@ -42,5 +44,9 @@ class SignInFragment : Fragment() {
         }
 
         return binding.root
+    }
+
+    private val atmsButtonOnClickListener = View.OnClickListener {
+        findNavController().navigate(R.id.action_signInFragment_to_bankLocationsFragment)
     }
 }

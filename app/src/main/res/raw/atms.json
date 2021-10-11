@@ -1,0 +1,28 @@
+{
+  "atms": [
+    {
+      "address":"Address nice address ya znay",
+      "type":"Банкомат",
+      "openTimeInMinutes": 0,
+      "closeTimeInMinutes": 0
+    },
+    {
+      "address":"Address nice addre",
+      "type":"Отделение",
+      "openTimeInMinutes": 0,
+      "closeTimeInMinutes": 300
+    },
+    {
+      "address":"Address nice a",
+      "type":"Банкомат",
+      "openTimeInMinutes": 0,
+      "closeTimeInMinutes": 1320
+    },
+    {
+      "address":"Address nicnay",
+      "type":"Банкомат",
+      "openTimeInMinutes": 780,
+      "closeTimeInMinutes": 1320
+    }
+  ]
+}
