@@ -2,10 +2,14 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/signInFragment">
+    app:startDestination="@id/bankLocationsFragment">
 
     <fragment
         android:id="@+id/signInFragment"
         android:name="com.example.worldskillsbank.presentation.ui.SignInFragment"
         android:label="SignInFragment" />
+    <fragment
+        android:id="@+id/bankLocationsFragment"
+        android:name="com.example.worldskillsbank.presentation.ui.BankLocationsFragment"
+        android:label="BankLocationsFragment" />
 </navigation>

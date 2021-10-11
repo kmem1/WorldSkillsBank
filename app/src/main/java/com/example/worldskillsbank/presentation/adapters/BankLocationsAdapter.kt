@@ -44,9 +44,10 @@ class BankLocationsAdapter(
             val closeTimeMinute = item.closeTimeInMinutes % 60
 
             val cal = Calendar.getInstance().apply { time = currentTime }
-            val currentTimeInMinutes = cal.get(Calendar.HOUR) * 60 + cal.get(Calendar.MINUTE)
+            val currentTimeInMinutes = cal.get(Calendar.HOUR_OF_DAY) * 60 + cal.get(Calendar.MINUTE)
 
-            if (currentTimeInMinutes in item.openTimeInMinutes..item.closeTimeInMinutes) {
+            if (currentTimeInMinutes in item.openTimeInMinutes..item.closeTimeInMinutes
+                || (item.openTimeInMinutes == 0 && item.closeTimeInMinutes == 0)) {
                 binding.isWorkingView.text = context.getString(R.string.open)
                 binding.isWorkingView.setTextColor(ContextCompat.getColor(context, R.color.green))
             } else {
