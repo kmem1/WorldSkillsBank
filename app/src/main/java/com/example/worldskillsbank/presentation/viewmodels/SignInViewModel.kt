@@ -40,7 +40,6 @@ class SignInViewModel @Inject constructor(private val repository: Repository) : 
         }
         viewModelScope.launch {
             repository.getValuteByCharCode(USD_CHARCODE, Date()).collect {
-                Log.d("qwe", it.toString())
                 if (it is State.Success) {
                     _currentUsdRate.value = "%.2f".format(it.data?.value)
                 }
